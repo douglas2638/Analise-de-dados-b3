@@ -70,3 +70,6 @@ python -m src.main `
 Abra no navegador:
 
 outputs/report.html
+
+ou acesse o exemplo:
+https://megapromostore.com.br/upload/1770061747399-report.html
