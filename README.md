@@ -1,7 +1,7 @@
 
 # Análise de Dados de Ações da B3 (Blue Chips) com Python
 
-![CI](https://github.com/douglas2638/analise-dados-b3-python/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/douglas2638/Analise-de-dados-b3/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/douglas2638/Analise-de-dados-b3/actions/workflows/ci.yml)
 
 Projeto em Python focado em **análise de dados financeiros**, utilizando ações **blue chips da B3**
 para gerar rankings por retorno e um **relatório automático em HTML**.
