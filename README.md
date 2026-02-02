@@ -1,21 +1,53 @@
-
 # Análise de Dados de Ações da B3 (Blue Chips) com Python
 
 [![CI](https://github.com/douglas2638/Analise-de-dados-b3/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/douglas2638/Analise-de-dados-b3/actions/workflows/ci.yml)
 
-Projeto em Python focado em **análise de dados financeiros**, utilizando ações **blue chips da B3**
-para gerar rankings por retorno e um **relatório automático em HTML**.
+Projeto em Python para **análise automatizada de ações blue chips da B3**, com geração de
+**rankings financeiros** e **relatório HTML** pronto para consumo.
 
-## Objetivo
+---
+
+## 📌 Visão geral
+
+Este projeto consome dados históricos de ações da B3 (via `yfinance`), calcula métricas
+financeiras relevantes e gera automaticamente um **relatório em HTML** com rankings
+comparativos entre ativos.
+
+O foco não é apenas análise, mas **engenharia de dados leve + qualidade de código + automação**.
+
+---
+
+## 🎯 Objetivo
+
 Demonstrar habilidades práticas em:
-- Python para dados
-- pandas e séries temporais
-- Métricas financeiras (retorno, volatilidade, drawdown)
-- Automação de relatórios
-- Qualidade de código (lint, testes, CI)
 
-## Stack
-Python, pandas, numpy, matplotlib, Jinja2, Ruff, Black, Pytest, Mypy, GitHub Actions.
+- Análise de dados financeiros com Python
+- Manipulação de séries temporais (`pandas`)
+- Métricas financeiras:
+  - Retorno acumulado
+  - Volatilidade
+  - Drawdown máximo
+- Automação de relatórios (HTML)
+- Boas práticas de engenharia:
+  - Lint (Ruff)
+  - Formatação (Black)
+  - Tipagem (Mypy)
+  - Testes (Pytest)
+  - CI com GitHub Actions
+
+---
+
+## 🧰 Stack
+
+- Python 3.11+
+- pandas, numpy, matplotlib
+- yfinance
+- Jinja2 (templates HTML)
+- Ruff, Black, Mypy
+- Pytest
+- GitHub Actions
+
+---
 
 ## ▶️ Execução rápida
 
@@ -25,8 +57,16 @@ Python, pandas, numpy, matplotlib, Jinja2, Ruff, Black, Pytest, Mypy, GitHub Act
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python -m src.main --source yfinance --start 2023-01-01 --refresh --use-adj
 
-## ▶️ Abra no navegador
+python -m src.main `
+  --source yfinance `
+  --start 2023-01-01 `
+  --refresh `
+  --use-adj
 
-outputs\report.html
+
+🌐 Visualizar relatório
+
+Abra no navegador:
+
+outputs/report.html
