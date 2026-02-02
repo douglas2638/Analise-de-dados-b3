@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from pathlib import Path
-from datetime import datetime
 import base64
+from datetime import datetime
+from pathlib import Path
+
 import pandas as pd
 
 
@@ -51,7 +52,9 @@ def build_html(summary: pd.DataFrame, outdir: str = "outputs", top_n: int = 3):
     # Embedding do gráfico
     png_b64 = _read_png_b64(str(out / "equity_top.png"))
     img_tag = (
-        f'<img alt="Equity Top" src="data:image/png;base64,{png_b64}" />' if png_b64 else "<p>(gráfico não encontrado)</p>"
+        f'<img alt="Equity Top" src="data:image/png;base64,{png_b64}" />'
+        if png_b64
+        else "<p>(gráfico não encontrado)</p>"
     )
 
     html = f"""

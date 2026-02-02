@@ -1,8 +1,11 @@
 from __future__ import annotations
+
 from pathlib import Path
+
 import pandas as pd
 
 REQUIRED = {"date", "ticker", "close"}
+
 
 def load_prices(path: str) -> pd.DataFrame:
     p = Path(path)

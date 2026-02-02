@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Iterable, List, Optional
 
 import pandas as pd
 import yfinance as yf
@@ -12,13 +12,13 @@ import yfinance as yf
 @dataclass
 class YFDownloadConfig:
     start: str = "2023-01-01"
-    end: str = None  # se None, yfinance usa "até hoje"
+    end: str | None = None  # se None, yfinance usa "até hoje"
     interval: str = "1d"  # "1d", "1wk", "1mo"
     use_adj_close: bool = True  # usa Adj Close se existir
     suffix_sa: bool = True  # adiciona ".SA" automaticamente
 
 
-def normalize_tickers(tickers: Iterable[str], suffix_sa: bool = True) -> List[str]:
+def normalize_tickers(tickers: Iterable[str], suffix_sa: bool = True) -> list[str]:
     out = []
     for t in tickers:
         t = t.strip().upper()

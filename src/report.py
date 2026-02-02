@@ -1,6 +1,7 @@
 from pathlib import Path
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def save_outputs(summary: pd.DataFrame, df: pd.DataFrame, outdir: str = "outputs", top_n: int = 3):

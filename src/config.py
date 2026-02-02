@@ -1,5 +1,13 @@
-
 BLUECHIPS = [
-    "VALE3","PETR4","PETR3","ITUB4","BBAS3","BBDC4",
-    "ABEV3","WEGE3","BPAC11","B3SA3","ELET3"
+    "VALE3",
+    "PETR4",
+    "PETR3",
+    "ITUB4",
+    "BBAS3",
+    "BBDC4",
+    "ABEV3",
+    "WEGE3",
+    "BPAC11",
+    "B3SA3",
+    "ELET3",
 ]
