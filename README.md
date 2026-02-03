@@ -72,4 +72,4 @@ Abra no navegador:
 outputs/report.html
 
 ou acesse o exemplo:
-https://megapromostore.com.br/upload/1770061747399-report.html
+https://megapromostore.com.br/upload/1770139721970-report.html

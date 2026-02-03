@@ -102,7 +102,7 @@ def build_html(summary: pd.DataFrame, outdir: str = "outputs", top_n: int = 3):
 
     <div class="footer">
       Gerado em {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}<br/>
-      Dica: você pode substituir o dataset em <code>data/sample</code> por dados reais e reexecutar.
+
     </div>
   </div>
 </body>
